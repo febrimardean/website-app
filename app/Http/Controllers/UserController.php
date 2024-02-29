@@ -25,7 +25,8 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        $this->authorize('super.user');
+        return view('dashboard.users.create');
     }
 
     /**

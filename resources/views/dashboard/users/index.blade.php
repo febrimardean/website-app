@@ -10,7 +10,7 @@
         </div>
         <div class="col-lg-7"></div>
         <div class="col-lg-3">
-            <form action="/blog">
+            <form action="/users">
                 @if (request('category'))
                     <input type="hidden" name="category" value="{{ request('category') }}">
                 @endif
